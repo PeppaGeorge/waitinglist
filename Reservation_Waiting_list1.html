@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+   
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title"><font size="6">Reservation Waiting List Entry Form</font></h1>
+        </div>
+      </div>
+    </section>
+    <form id="form" class="container m-4 pl-4" method="POST">
+      <div class="field">
+        <label class="label"><font size="4">Name</font></label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Full Name"
+            name="Name"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label"><font size="4">Age</font></label>
+        <div class="control">
+          <input
+            class="input"
+            type="number"
+            placeholder="Age"
+            name="Age"
+            required
+          />
+        </div>
+      </div>
+
+
+        <label class="label"><font size="4">Permanent Address</font></label>
+        <div style="margin-bottom: 20px;">
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              placeholder="Ex.Brgy.Balud,San Fernando,Cebu"
+              name="Permanent Address"
+              required
+            />
+          </div>
+        </div> 
+
+        <label class="label"><font size="4">City Address</font></label>
+        <div style="margin-bottom: 20px;">
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              placeholder="If none put N/A"
+              name="City Address"
+              required
+            />
+          </div>
+        </div> 
+
+
+      <div class="field">
+        <label class="label"><font size="4">Educational Attainment</font></label>
+        <div class="control">
+        <select name="Educational Attainment" id="Educational Attainment" required>
+          <option value="">Select Educational Attainment</option>
+          <option value="Elementary">Elementary</option>
+          <option value="High-school">High School</option>
+          <option value="High-school">Junior High</option>
+          <option value="High-school">Senior High</option>
+          <option value="Vocational">Vocational</option>
+          <option value="College">College</option>
+          <option value="Bachelor's-degree">Bachelor's Degree</option>
+          <option value="Master's-degree">Master's Degree</option>
+          <option value="Doctoral-degree">Doctoral Degree</option>
+        </select>
+        </label>
+       </div>  
+      </div>
+
+      
+      <div class="field">
+        <label class="label"><font size="4">Contact Number</font></label>
+        <div class="control">
+          <input
+            class="input"
+            type="number"
+            placeholder="Mobile Number"
+            name="Contact No."
+            required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label"><font size="4">Date of Birth</font></label>
+        <div class="control">
+          <input
+            class="input"
+            type="date"
+            placeholder="Your Date of Birth"
+            name="DOB"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label"><font size="4">Gender</font></label>
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="Gender" value="male" required/> Male
+          </label>
+          <label class="radio">
+            <input type="radio" name="Gender" value="female" required/> Female
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label"><font size="4">Course Desired</font></label>
+        <div class="control">
+        <select name="Course Desired" id="Course Desired" required>
+          <option value="">Select Course</option>
+          <option value=" Automotive NC I ">Automotive NC I</option>
+          <option value=" Automotive NC II (Under Chassis Repair) ">Automotive (Under Chassis Repair) NC II</option>
+          <option value=" Automotive NC II (Electrical Repair) ">Automotive (Under Electrical Repair) NC II</option>
+          <option value=" Automotive NC III ">Automotive NC III</option>
+          <option value=" CNC Lathe Machine Operation NC II "> CNC Lathe Machine Operation NC II </option>
+          <option value=" CNC Milling Machine Operation NC II "> CNC Milling Machine Operation NC II </option>
+          <option value=" Commercial Air-Conditioning Installation and Servicing NC III "> Commercial Air-Conditioning Installation and Servicing NC III </option>
+          <option value=" Computer-Based English Proficiency "> Computer-Based English Proficiency </option>
+          <option value=" Computer System Servicing NC II "> Computer System Servicing NC II </option>
+          <option value=" Domestic Work NC II "> Domestic Work NC II </option>
+          <option value=" Dressmaking NC II "> Dressmaking NC II </option>
+          <option value=" Dressmaking NC II "> Driving NC II </option>
+          <option value=" Electrical Installation and Maintenance NC II "> Electrical Installation and Maintenance NC II </option>
+          <option value=" Electrical Installation and Maintenance NC III "> Electrical Installation and Maintenance NC III </option>
+          <option value=" Electronics Products Assembly and Servicing NC II "> Electronics Products Assembly and Servicing NC II </option>
+          <option value=" Electronics Products Assembly and Servicing NC III "> Electronics Products Assembly and Servicing NC III </option>
+          <option value=" Housekeeping NC II "> Housekeeping NC II </option>
+          <option value=" Korean Language and Culture "> Korean Language and Culture </option>
+          <option value=" Housekeeping "> Housekeeping </option>
+          <option value=" Machining NC II "> Machining NC II </option>
+          <option value=" Plumbing NC II "> Plumbing NC II </option>
+          <option value=" RAC Servicing (DomRac) NC II "> RAC Servicing (DomRac) NC II </option>
+          <option value=" Shielded Metal Arc Welding (SMAW) NC II "> Shielded Metal Arc Welding (SMAW) NC II </option>
+          <option value=" Shielded Metal Arc Welding (SMAW) NC II "> Shielded Metal Arc Welding (SMAW) NC II </option>
+          <option value=" Spanish Language and Culture "> Spanish Language and Culture </option>
+          <option value=" Trainers Methodology Level I "> Trainers Methodology Level I </option>
+          <option value=" Trainers Methodology Level II "> Trainers Methodology Level II </option>
+        </select>
+        </label>
+       </div>  
+      </div>
+
+
+      <div class="field">
+        <br style="margin-bottom: 20px;">
+        <label class="label"><font size="4">Agree to Terms</font></label>
+        <p><font color="red" size="2">Disclaimer: Information shared herewith are covered, as applicable, by the Data Privacy Act and related laws.</font></p>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" name="Agree To Terms" value="yes" /> I agree
+            to the terms and conditions
+          </label>
+        </div>
+      </div>
+
+    
+
+      <div class="field is-grouped">
+        <br style="margin-bottom: 20px;">
+        <div class="control">
+          <br style="margin-bottom: 20px;">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Sign Up
+          </button>
+        </div>
+        <div class="control">
+          <br style="margin-bottom: 20px;">
+          <button class="button is-danger">Cancel</button>
+        </div>
+      </div>
+    </form>
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 20px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+
+   
+   <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+        
+   
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbwFXqo204Q2yr2GDw65Eejrv1fSD3I-CdY6I5i1TSPPr2in5ycCxqklxCBK0MbbmTeq/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+  </body>
+</html>
